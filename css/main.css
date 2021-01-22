@@ -178,41 +178,27 @@ footer small a {
 }
 
 /*Stuff added in this fork*/
-
-/* ribbons.min.css | http://inloop.github.io/sqlite-viewer/css/ribbons.min.css */
-
 body {
   background-color: #222;
   color: #E0E0E0 !important;
 }
 
 .ribbon.grey {
-  /* background: #888; */
-  background: #555;
+  background: #444;
 }
-
-/* main.css | http://inloop.github.io/sqlite-viewer/css/main.css */
 
 #main-container {
-  /* background: #ffffff; */
-  /* box-shadow: 0 1px 16px silver; */
   background: #373737;
-  box-shadow: 0 1px 16px orange;
-}
-
-.ribbon {
-  background-color: black;
+  box-shadow: 0 1px 8px orange;
 }
 
 #header {
-  /* background: #A0CFFF; */
-  /* color: #3474A8; */
   background: #444;
   color: #E0E0E0;
 }
 
 #dropzone {
-  background-color: #444;
+  background-color: #3F3F3F;
   border: 1px solid #303030;
 }
 
@@ -234,56 +220,52 @@ footer {
   }
 }
 
-.btn-primary {
-  /* background-color: #337ab7; */
-  /* border-color: #2e6da4; */
+.btn-primary{
   background-color: orange;
-  border-color: darkblue;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn-primary:hover {
+	background-color: rgb(236, 153, 0);
+}
+.btn-primary:focus{
+  background-color: orange!important;
+  border: 1px solid rgba(0, 0, 0, 0.1)!important;
+}
+tr{
+  background-color: #444!important;
 }
 
-.table-bordered {
-  /* border: 1px solid #ddd; */
-  border: 1px solid #222;
-}
-
-.table-striped > tbody > tr:nth-of-type(2n+1) {
-  /* background-color: #f9f9f9; */
-  background-color: #444;
-}
-.table-striped > tbody > tr:nth-of-type(2n) {
-	background-color: #404040;
-}
 .btn-default {
-  /* color: #333; */
-  /* background-color: #fff; */
-  /* border-color: #ccc; */
   background-color: #333;
   border-color: #252525;
+  color: #E0E0E0!important;
+}
+.btn-default:focus{
+  background-color: #333!important;
+}
+.btn-default:hover{
+	background-color: #444;
+	border-color: #383838;
 }
 
 .btn-default.disabled, .btn-default.disabled.active, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled], .btn-default[disabled].active, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
-  /* background-color: #fff; */
-  /* border-color: #ccc; */
   background-color: #333;
   border-color: #252525;
 }
 
-/* select2.css | http://inloop.github.io/sqlite-viewer/css/select2.css */
-
 .select2-drop-active {
-  /* border: 1px solid #5897fb; */
   border: 1px solid #333;
 }
 
-.select2-drop {
-  /* background: #fff; */
-  /* color: #000; */
+.select2-drop, .select2-no-results{
   background: #444;
   color: #E0E0E0;
 }
 
 .select2-search input {
-  /* background: url('../img/select2.png') no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0; */
+  background: #555;
+  color: #E0E0E0;
+  border: 1px solid #444;
 }
 
 .select2-container .select2-choice > .select2-chosen {
@@ -292,21 +274,45 @@ footer {
 }
 
 .select2-results .select2-highlighted {
-  /* background: #3875d7; */
-  background: orange;
-}
-
-/* select2-bootstrap.css | http://inloop.github.io/sqlite-viewer/css/select2-bootstrap.css */
-
-.select2-search input {
-  /* color: #555555; */
-  /* background-color: white; */
-  color: black;
-  background-color: #555 !important;
-}
-
-.select2-results .select2-highlighted {
   /* background-color: #337ab7; */
   background-color: orange;
   border-radius: 3px;
+}
+
+/*Select2 Box Shadow*/
+.select2-container-active .select2-choice, .select2-container-multi.select2-container-active .select2-choices {
+	border-color: #ffa500;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 165, 0, 0.6);
+}
+
+.select2-container .select2-choices .select2-search-field input, .select2-container .select2-choice, .select2-container .select2-choices {
+	border-color: #333;
+}
+
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+  border: 1px solid #383838!important;
+}
+
+/*Texteare appears when user left-clicks a td item*/
+textarea{
+	border: none;
+	background-color: #444;
+}
+/*SQL Query Input*/
+.ace-monokai {
+	background-color: #404040!important;
+	border: none!important;
+}
+.select2-choice{
+	background: #393939!important;
+}
+.select2-arrow{
+	background: transparent!important;
+}
+
+/*Messages (not all are covered)*/
+.alert-danger{
+	border: none;
+	color: #E0E0E0;
+	background-color: #6E4242;
 }

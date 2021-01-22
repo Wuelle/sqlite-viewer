@@ -89,7 +89,7 @@ if (typeof FileReader === "undefined") {
 }
 
 //Initialize editor
-editor.setTheme("ace/theme/chrome");
+editor.setTheme("ace/theme/monokai");
 editor.renderer.setShowGutter(false);
 editor.renderer.setShowPrintMargin(false);
 editor.renderer.setPadding(20);
