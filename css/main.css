@@ -1,178 +1,312 @@
 body {
-    background: #f5f5f5;
+	background: #f5f5f5;
 }
 
 footer {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    color: darkgray;
-    text-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	color: darkgray;
+	text-align: center;
 }
 
 footer small a {
-    color: #7AA7CF;
+	color: #7AA7CF;
 }
 
 #main-container {
-    position: relative;
-    background: #ffffff;
-    box-shadow: 0 1px 16px silver;
-    z-index: 2;
+	position: relative;
+	background: #ffffff;
+	box-shadow: 0 1px 16px silver;
+	z-index: 2;
 }
 
 .node-info {
-    font-style: italic;
-    display: none;
-    margin: 0;
-    padding: 0;
+	font-style: italic;
+	display: none;
+	margin: 0;
+	padding: 0;
 }
 
 .drag {
-    background-color: lightblue;
+	background-color: lightblue;
 }
 
 .info-items td {
-    vertical-align: top;
+	vertical-align: top;
 }
 
 .info-items td:first-child {
-    width: 90px;
+	width: 90px;
 }
 
 #header {
-    background: #A0CFFF;
-    color: #3474A8;
-    padding: 16px;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: 15px;
+	background: #A0CFFF;
+	color: #3474A8;
+	padding: 16px;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: 15px;
 
 }
 
 #header h3 {
-    margin: 0;
+	margin: 0;
 }
 
 #resizer {
-    font-size: 26px;
+	font-size: 26px;
 }
 
 #resizer i {
-    padding-top: 15px;
+	padding-top: 15px;
 }
 
 #resizer i.glyphicon-resize-small {
-    margin-right: 120px;
+	margin-right: 120px;
 }
 
 #dropzone {
-    height: 450px;
-    width: 100%;
-    font-size: 1.2em;
-    cursor: pointer;
-    text-align: center;
-    display: table;
-    table-layout: fixed;
+	height: 450px;
+	width: 100%;
+	font-size: 1.2em;
+	cursor: pointer;
+	text-align: center;
+	display: table;
+	table-layout: fixed;
 }
 
 #dropzone .panel-body {
-    display: table-cell;
-    vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #output-box {
-    display: none;
-    margin-bottom: 20px;
+	display: none;
+	margin-bottom: 20px;
 }
 
 #button-box {
-    position: absolute;
-    right: 40px;
+	position: absolute;
+	right: 40px;
 }
 
 .ace_hidden-cursors {
-    opacity: 0
+	opacity: 0
 }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-    background-color: #F5F5E7;
+	background-color: #F5F5E7;
 }
 
 #data {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 #data th span {
-    cursor: help;
+	cursor: help;
 }
 
 #data th, #data td {
-    max-width: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+	max-width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 #bottom-bar a:focus, a:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 #bottom-bar .inline {
-    background: #fff;
-    display: inline-block;
-    padding: 15px;
-    margin: -15px
+	background: #fff;
+	display: inline-block;
+	padding: 15px;
+	margin: -15px
 }
 
 #bottom-bar {
-    z-index: 1;
-    bottom: 0;
-    padding: 15px;
-    position: static;
-    display: none;
-    margin-left: -8px;
+	z-index: 1;
+	bottom: 0;
+	padding: 15px;
+	position: static;
+	display: none;
+	margin-left: -8px;
 }
 
 @media (min-width: 1300px) {
-    #bottom-bar {
-        position: fixed;
-    }
+	#bottom-bar {
+		position: fixed;
+	}
 
-    #pager {
-        display: block;
-    }
+	#pager {
+		display: block;
+	}
 }
 
 @media (min-width: 1450px) {
-    #pager {
-        display: inline-block;
-    }
+	#pager {
+		display: inline-block;
+	}
 }
 
 .ribbon {
-    z-index: 3;
+	z-index: 3;
 }
 /* Animated loading icon */
 
 .glyphicon-refresh-animate {
-    -animation: spin .7s infinite linear;
-    -webkit-animation: spin2 .7s infinite linear;
+	-animation: spin .7s infinite linear;
+	-webkit-animation: spin2 .7s infinite linear;
 }
 
 @-webkit-keyframes spin2 {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
 }
 
 @keyframes spin {
-    from {
-        transform: scale(1) rotate(0deg);
-    }
-    to {
-        transform: scale(1) rotate(360deg);
-    }
+	from {
+		transform: scale(1) rotate(0deg);
+	}
+	to {
+		transform: scale(1) rotate(360deg);
+	}
+}
+
+/*Stuff added in this fork*/
+
+/* ribbons.min.css | http://inloop.github.io/sqlite-viewer/css/ribbons.min.css */
+
+body {
+  background-color: #222;
+  color: #E0E0E0 !important;
+}
+
+.ribbon.grey {
+  /* background: #888; */
+  background: #555;
+}
+
+/* main.css | http://inloop.github.io/sqlite-viewer/css/main.css */
+
+#main-container {
+  /* background: #ffffff; */
+  /* box-shadow: 0 1px 16px silver; */
+  background: #373737;
+  box-shadow: 0 1px 16px orange;
+}
+
+.ribbon {
+  background-color: black;
+}
+
+#header {
+  /* background: #A0CFFF; */
+  /* color: #3474A8; */
+  background: #444;
+  color: #E0E0E0;
+}
+
+#dropzone {
+  background-color: #444;
+  border: 1px solid #303030;
+}
+
+#bottom-bar .inline {
+  /* background: #fff; */
+  background: transparent;
+}
+
+footer {
+  /* color: darkgray; */
+  color: #E0E0E0;
+}
+
+/* bootstrap.min.css | http://inloop.github.io/sqlite-viewer/css/bootstrap.min.css */
+
+@media (min-width: 1200px) {
+  .container {
+    background-color: #333;
+  }
+}
+
+.btn-primary {
+  /* background-color: #337ab7; */
+  /* border-color: #2e6da4; */
+  background-color: orange;
+  border-color: darkblue;
+}
+
+.table-bordered {
+  /* border: 1px solid #ddd; */
+  border: 1px solid #222;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+  /* background-color: #f9f9f9; */
+  background-color: #444;
+}
+.table-striped > tbody > tr:nth-of-type(2n) {
+	background-color: #404040;
+}
+.btn-default {
+  /* color: #333; */
+  /* background-color: #fff; */
+  /* border-color: #ccc; */
+  background-color: #333;
+  border-color: #252525;
+}
+
+.btn-default.disabled, .btn-default.disabled.active, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled], .btn-default[disabled].active, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
+  /* background-color: #fff; */
+  /* border-color: #ccc; */
+  background-color: #333;
+  border-color: #252525;
+}
+
+/* select2.css | http://inloop.github.io/sqlite-viewer/css/select2.css */
+
+.select2-drop-active {
+  /* border: 1px solid #5897fb; */
+  border: 1px solid #333;
+}
+
+.select2-drop {
+  /* background: #fff; */
+  /* color: #000; */
+  background: #444;
+  color: #E0E0E0;
+}
+
+.select2-search input {
+  /* background: url('../img/select2.png') no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0; */
+}
+
+.select2-container .select2-choice > .select2-chosen {
+  background-color: #484848;
+  color: #E0E0E0;
+}
+
+.select2-results .select2-highlighted {
+  /* background: #3875d7; */
+  background: orange;
+}
+
+/* select2-bootstrap.css | http://inloop.github.io/sqlite-viewer/css/select2-bootstrap.css */
+
+.select2-search input {
+  /* color: #555555; */
+  /* background-color: white; */
+  color: black;
+  background-color: #555 !important;
+}
+
+.select2-results .select2-highlighted {
+  /* background-color: #337ab7; */
+  background-color: orange;
+  border-radius: 3px;
 }
